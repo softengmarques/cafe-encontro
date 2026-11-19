@@ -1,0 +1,384 @@
+:root {
+    --main-color: #d3ad7f;
+    --black-color: #131313;
+    --bg: #010101;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: #ffff;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}   
+
+.header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.logo {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #ffff;
+}
+
+.logo:hover {
+    color: var(--main-color);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar a {
+    text-align: center;
+    margin: 0 1.5rem;
+    font-size: 1.8rem;
+    color: #ffff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.2rem;
+    font-size: 2rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #ffff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    border-radius: 0; 
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
+}
+
+.conteudo-principal {
+    background-color: transparent;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./img/imagem-cafe.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.conteudo {
+    max-width: 60rem;
+    margin: 0 ;
+}
+
+.conteudo h3 {
+    color: #ffff;
+    font-size: 6rem;
+}
+
+.conteudo p {
+    color: #ffff;
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.titulo {
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.titulo span {
+    color: #ffff;
+    text-transform: uppercase;
+}
+  
+.sobre .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black-color);
+    gap: 1.5rem;
+    border-radius: 0; 
+}
+
+.sobre .row .conteudo-sobre {
+    padding: 2rem;
+}
+
+.sobre .row .conteudo-sobre h3 {
+    font-size: 3rem;
+    color: #ffff;
+}
+
+.sobre .row .conteudo-sobre p {
+    font-size: 1.6rem;
+    color: #ffff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* --- Seção Serviços --- */
+.servicos .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.servicos .box {
+    background-color: var(--black-color);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 0; 
+}
+
+.servicos .box img {
+    height: 7rem;
+    margin-bottom: 1.5rem;
+}
+
+.servicos .box h3 {
+    font-size: 2rem;
+    color: #ffff;
+    margin-bottom: 1rem;
+}
+
+.servicos .box p {
+    font-size: 1.4rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.servicos .box i {
+    font-size: 3rem; 
+    color: var(--main-color);    
+    margin-bottom: 15px; 
+}
+
+.cardapio .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+}
+
+.cardapio .box {
+    background-color: var(--black-color);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 0; 
+}
+
+.cardapio .box img {
+    height: 12rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.cardapio .box h3 {
+    font-size: 2rem;
+    color: #ffff;
+    margin-bottom: 1rem;
+}
+
+.cardapio .box .preco {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.cardapio .box .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 0; 
+}
+
+
+.contato {
+    background-color: var(--bg);
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contato .info-contato {
+    flex: 1;
+}
+
+.contato .info-contato h3 {
+    font-size: 2.4rem;
+    color: #ffff;
+    margin-bottom: 1.5rem;
+}
+
+.contato .info-contato p {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+}
+
+.contato .info-contato strong {
+    color: var(--main-color);
+}
+
+.contato .form-contato {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato .form-contato h3 {
+    font-size: 2.4rem;
+    color: #ffff;
+    margin-bottom: 1.5rem;
+}
+
+
+.box-input {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.5rem;
+    color: #ffff;
+    background: var(--black-color);
+    border: var(--border);
+    border-radius: 0; 
+    margin-bottom: 1.5rem;
+    text-transform: none;
+    transition: all 0.3s ease;
+}
+
+.box-input:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0.8rem rgba(211, 173, 127, 0.2);
+}
+
+textarea.box-input {
+    resize: none;
+    height: 120px;
+}
+
+.contato .form-contato .btn {
+    align-self: flex-start;
+    padding: 1rem 3.5rem;
+    margin-top: 0;
+    border-radius: 0; 
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+
+.footer {
+    background-color: var(--black-color);
+    border-top: var(--border);
+    text-align: center;
+    padding: 2rem 2rem;
+    margin-top: 3rem;
+}
+
+.footer .share {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer .share a {
+    font-size: 1.5rem;
+    color: #ffff;
+}
+
+.footer .share a:hover {
+    color: var(--main-color);
+}
+
+.footer .creditos {
+    font-size: 1.3rem;
+    color: #aaa;
+    text-transform: none;
+}
+
+/* produzindo por:
+ Ana Paula Marques Cardoso
+ Ana Kelly de Oliveira Monteiro
+*/
